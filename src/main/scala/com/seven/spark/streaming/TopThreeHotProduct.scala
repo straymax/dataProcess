@@ -18,7 +18,7 @@ import org.apache.spark.streaming.{Seconds, StreamingContext}
   *        w'W   W'w
   *
   * author   seven
-  * email    sevenstone@yeah.net
+  * email    straymax@163.com
   * date     2018/5/10 上午11:27
   *
   * SparkStreaming,SparkSql

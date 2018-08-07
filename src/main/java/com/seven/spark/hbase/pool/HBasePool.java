@@ -19,7 +19,7 @@ import java.util.NoSuchElementException;
  *        w'W   W'w
  *
  * author   seven
- * email    sevenstone@yeah.net
+ * email    straymax@163.com
  * date     2018/5/11 上午10:37
  *
  * HBase客户端连接池

@@ -18,7 +18,7 @@ import org.apache.spark.sql.types.{StringType, StructField, StructType}
   *        w'W   W'w
   *
   * author   seven
-  * email    sevenstone@yeah.net
+  * email    straymax@163.com
   * date     2018/5/14 上午10:37
   */
 object SparkSessionTest {

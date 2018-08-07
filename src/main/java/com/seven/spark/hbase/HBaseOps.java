@@ -28,7 +28,7 @@ import java.util.List;
  *        w'W   W'w
  *
  * author   seven
- * email    sevenstone@yeah.net
+ * email    straymax@163.com
  * date     2018/5/10 下午4:37
  *
  * HBase常用操作

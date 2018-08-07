@@ -18,7 +18,7 @@ import org.apache.spark.streaming.{Seconds, StreamingContext}
   *        w'W   W'w
   *
   * author   seven
-  * email    sevenstone@yeah.net
+  * email    straymax@163.com
   * date     2018/5/7 上午10:30
   * 接收kafka数据,统计单词数量
   */

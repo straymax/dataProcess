@@ -15,7 +15,7 @@ import java.io.Serializable;
  *        w'W   W'w
  *
  * author   seven
- * email    sevenstone@yeah.net
+ * email    straymax@163.com
  * date     2018/5/10 下午1:37
  *
  * RowKey生成器,RowKey设计三原则

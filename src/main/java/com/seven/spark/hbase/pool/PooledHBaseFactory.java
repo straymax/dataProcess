@@ -24,7 +24,7 @@ import org.slf4j.LoggerFactory;
  *        w'W   W'w
  *
  * author   seven
- * email    sevenstone@yeah.net
+ * email    straymax@163.com
  * date     2018/5/11 上午9:37
  */
 public class PooledHBaseFactory extends BasePooledObjectFactory<Connection> {

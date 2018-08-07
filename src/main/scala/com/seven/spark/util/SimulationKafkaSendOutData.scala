@@ -19,7 +19,7 @@ import org.apache.spark.{SparkConf, SparkContext}
   *        w'W   W'w
   *
   * author   seven
-  * email    sevenstone@yeah.net
+  * email    straymax@163.com
   * date     2018/5/24 上午11:03     
   */
 object SimulationKafkaSendOutData {

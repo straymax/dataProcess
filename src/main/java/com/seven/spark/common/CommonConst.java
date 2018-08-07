@@ -14,7 +14,7 @@ package com.seven.spark.common;
  *        w'W   W'w
  *
  * author   seven
- * email    sevenstone@yeah.net
+ * email    straymax@163.com
  * date     2018/5/10 上午10:37
  */
 public class CommonConst {

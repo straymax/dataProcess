@@ -19,7 +19,7 @@ import org.slf4j.LoggerFactory;
  *        w'W   W'w
  *
  * author   seven
- * email    sevenstone@yeah.net
+ * email    straymax@163.com
  * date     2018/5/10 下午1:40
  *
  * 文件表RowKey

@@ -16,7 +16,7 @@ import org.apache.commons.codec.digest.DigestUtils;
  *        w'W   W'w
  *
  * author   seven
- * email    sevenstone@yeah.net
+ * email    straymax@163.com
  * date     2018/5/10 下午2:17
  */
 public class MD5RowKeyGenerator implements RowKeyGenerator<String> {

@@ -17,7 +17,7 @@ import org.apache.kafka.clients.producer.{KafkaProducer, ProducerRecord, RecordM
   *        w'W   W'w
   *
   * author   seven
-  * email    sevenstone@yeah.net
+  * email    straymax@163.com
   * date     2018/5/11 上午10:37
   *
   * kafka包装类

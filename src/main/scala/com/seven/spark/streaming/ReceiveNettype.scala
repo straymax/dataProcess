@@ -21,7 +21,7 @@ import scala.collection.JavaConversions._
 /**
   * Created by IntelliJ IDEA.  
   * author   seven  
-  * email    zjshi01@mail.nfsq.com.cn 
+  * email    straymax@163.com
   * date     2018/8/1 上午9:51     
   */
 object ReceiveNettype {

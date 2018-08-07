@@ -9,7 +9,7 @@ import java.util.NoSuchElementException;
 /**
  * Created by IntelliJ IDEA.
  * author   seven
- * email    sevenstone@yeah.net
+ * email    straymax@163.com
  * date     2018/7/24 上午11:22
  */
 public class PhoenixPool implements ObjectPool<Connection> {

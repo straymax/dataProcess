@@ -18,7 +18,7 @@ import org.slf4j.LoggerFactory
   *        w'W   W'w
   *
   * author   seven
-  * email    sevenstone@yeah.net
+  * email    straymax@163.com
   * date     2018/5/2 下午4:37
   * 生成网点关系与点位关系
   */

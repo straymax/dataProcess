@@ -18,7 +18,7 @@ import java.util
   *        w'W   W'w
   *
   * author   seven
-  * email    sevenstone@yeah.net
+  * email    straymax@163.com
   * date     2018/5/10 上午9:20
   *
   * 简易数据库连接池

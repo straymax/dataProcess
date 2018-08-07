@@ -21,7 +21,7 @@ import java.util.NoSuchElementException;
  *        w'W   W'w
  *
  * author   seven
- * email    sevenstone@yeah.net
+ * email    straymax@163.com
  * date     2018/5/27 上午10:08
  */
 public class ElasticPool implements ObjectPool<TransportClient> {

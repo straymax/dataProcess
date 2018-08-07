@@ -15,7 +15,7 @@ import java.util.Objects;
  *        w'W   W'w
  *
  * author   seven
- * email    sevenstone@yeah.net
+ * email    straymax@163.com
  * date     2018/5/29 上午11:07
  */
 public class Other {

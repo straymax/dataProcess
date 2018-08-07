@@ -18,7 +18,7 @@ import org.apache.spark.{SparkConf, SparkContext}
   *        w'W   W'w
   *
   * author   seven
-  * email    sevenstone@yeah.net
+  * email    straymax@163.com
   * date     2018/5/2 上午11:37
   *
   * 处理点位和网点信息工具类

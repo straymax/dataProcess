@@ -8,7 +8,7 @@ import org.apache.spark.{SparkConf, SparkContext}
 /**
   * Created by IntelliJ IDEA.  
   * author   seven  
-  * email    sevenstone@yeah.net
+  * email    straymax@163.com
   * date     2018/7/9 下午1:38     
   */
 object GoodNetMode {
