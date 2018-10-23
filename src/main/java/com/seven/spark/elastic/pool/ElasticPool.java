@@ -10,16 +10,6 @@ import java.util.NoSuchElementException;
 
 /**
  * Created by IntelliJ IDEA.
- *         __   __
- *         \/---\/
- *          ). .(
- *         ( (") )
- *          )   (
- *         /     \
- *        (       )``
- *       ( \ /-\ / )
- *        w'W   W'w
- *
  * author   seven
  * email    straymax@163.com
  * date     2018/5/27 上午10:08

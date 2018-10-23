@@ -5,16 +5,6 @@ import org.apache.commons.codec.digest.DigestUtils;
 
 /**
  * Created by IntelliJ IDEA.
- *         __   __
- *         \/---\/
- *          ). .(
- *         ( (") )
- *          )   (
- *         /     \
- *        (       )``
- *       ( \ /-\ / )
- *        w'W   W'w
- *
  * author   seven
  * email    straymax@163.com
  * date     2018/5/10 下午2:17

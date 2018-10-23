@@ -1,24 +1,64 @@
 package com.seven.spark;
 
 
+import com.seven.spark.common.Utils;
 import com.seven.spark.hbase.rowkey.RowKeyGenerator;
 import com.seven.spark.hbase.rowkey.generator.HashRowKeyGenerator;
 import org.apache.commons.lang.StringUtils;
+import org.apache.hadoop.hbase.util.Bytes;
+import scala.util.control.Exception;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class HelloJava {
+    public static boolean judgeContainsStr(String cardNum) {
+        String regex = ".*[a-zA-Z]+.*";
+        Matcher m = Pattern.compile(regex).matcher(cardNum);
+        return m.matches();
+    }
+
+
     public static void main(String[] args) {
+        try {
+
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-w");
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.S");
+
+            System.out.println(simpleDateFormat.format(sdf.parse("2018-10-12 00:00:00.0").getTime()));
+            System.out.println(simpleDateFormat.format(sdf.parse("2018-10-13 00:00:00.0").getTime()));
+            System.out.println(simpleDateFormat.format(sdf.parse("2018-10-14 00:00:00.0").getTime()));
+            System.out.println(simpleDateFormat.format(sdf.parse("2018-10-15 00:00:00.0").getTime()));
+            System.out.println(simpleDateFormat.format(sdf.parse("2018-10-16 00:00:00.0").getTime()));
+            System.out.println(simpleDateFormat.format(sdf.parse("2018-10-17 00:00:00.0").getTime()));
+            System.out.println(simpleDateFormat.format(sdf.parse("2018-10-18 00:00:00.0").getTime()));
+            System.out.println(simpleDateFormat.format(sdf.parse("2018-10-19 00:00:00.0").getTime()));
+            System.out.println(simpleDateFormat.format(sdf.parse("2018-10-20 00:00:00.0").getTime()));
+            System.out.println(simpleDateFormat.format(sdf.parse("2018-10-21 00:00:00.0").getTime()));
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
 //        System.out.println(Double.parseDouble("6000.0"));
 //
 //        System.out.println(-5.2259676281485685E66 - Double.parseDouble("6000.0") > 0 ? false : true );
 //
-        System.out.println(StringUtils.isBlank(" "));
-        System.out.println(StringUtils.isNotBlank(" "));
-        System.out.println(StringUtils.isNotBlank(null));
-        System.out.println(StringUtils.isNotEmpty(null));
+        System.out.println(judgeContainsStr("qw1e"));
+        System.out.println(judgeContainsStr("126789034"));
+        System.out.println("LA18D216091".hashCode());
+        System.out.println("NFZF1400043".hashCode());
+        System.out.println("NFZF1400062".hashCode());
+        System.out.println("YST18000004".hashCode());
+        System.out.println("YST180000041807091633406164".length());
+        System.out.println("YST180000041807091633406164".substring(11,26));
+        System.out.println(getDay("180709163340"));
+//        System.out.println(StringUtils.isBlank(" "));
+//        System.out.println(StringUtils.isNotBlank(" "));
+//        System.out.println(StringUtils.isNotBlank(null));
+//        System.out.println(StringUtils.isNotEmpty(null));
+
 //
 //        List<String> list = new ArrayList<>();
 //        list.add("a");
@@ -114,13 +154,24 @@ public class HelloJava {
 ////        SimpleDateFormat format2 = new SimpleDateFormat("yyyy-MM-dd");
 ////        Date starttime = new Date();
 ////        System.out.println(format2.format(starttime.getTime()));
+////
+        SimpleDateFormat sdf2 = new SimpleDateFormat("D");
+        String a1 = "2018-09-01";
+        String a2 = "2018-08-01";
+        String a3 = "2018-07-01";
+        String a4 = "2018-10-01";
 //
-//        SimpleDateFormat sdf2 = new SimpleDateFormat("D");
-//
-//        System.out.println(sdf2.format(new Date())+"---11111");
-//
-//
-//        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+////
+////
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        try {
+            System.out.println(sdf2.format(sdf.parse(a1)));
+            System.out.println(sdf2.format(sdf.parse(a2)));
+            System.out.println(sdf2.format(sdf.parse(a3)));
+            System.out.println(sdf2.format(sdf.parse(a4)));
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
 //
 //        System.out.println("2018-05-01".substring(5, 9));
 //        try {
@@ -178,12 +229,12 @@ public class HelloJava {
         return sdf.format(cal.getTime());
     }
 
-    private static String getDay(Date date,int num){
+    private static String getDay(Date date, int num) {
         Calendar calendar = new GregorianCalendar();
         calendar.setTime(date);
-        calendar.add(calendar.MONTH,num);//把日期往后增加一天.整数往后推,负数往前移动
+        calendar.add(calendar.MONTH, num);//把日期往后增加一天.整数往后推,负数往前移动
         calendar.set(Calendar.DAY_OF_MONTH, 1);
-        date=calendar.getTime(); //这个时间就是日期往后推一天的结果
+        date = calendar.getTime(); //这个时间就是日期往后推一天的结果
         SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
         String dateString = formatter.format(date);
         return dateString;
@@ -200,8 +251,23 @@ public class HelloJava {
     private static int getMouthDay(String time) throws ParseException {
         Calendar cal = Calendar.getInstance();
         cal.set(Calendar.YEAR, Integer.parseInt(time.split("-")[0]));
-        cal.set(Calendar.MONTH,Integer.parseInt(time.split("-")[1]));
+        cal.set(Calendar.MONTH, Integer.parseInt(time.split("-")[1]));
         return cal.getActualMaximum(Calendar.DATE);
+    }
+
+    private static String getDay(String str){
+
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.S");
+        SimpleDateFormat sdf1 = new SimpleDateFormat("yyMMddHHmmss");
+
+        try {
+            long l = sdf1.parse(str).getTime();
+            return sdf.format(l);
+        } catch (ParseException e) {
+            e.printStackTrace();
+            return "";
+        }
+//        return "";
     }
 
 

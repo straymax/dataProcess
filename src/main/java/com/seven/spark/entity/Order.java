@@ -4,16 +4,6 @@ import java.util.Objects;
 
 /**
  * Created by IntelliJ IDEA.
- *         __   __
- *         \/---\/
- *          ). .(
- *         ( (") )
- *          )   (
- *         /     \
- *        (       )``
- *       ( \ /-\ / )
- *        w'W   W'w
- *
  * author   seven
  * email    straymax@163.com
  * date     2018/5/28 下午1:22

@@ -17,16 +17,6 @@ import java.util.List;
 
 /**
  * Created by IntelliJ IDEA.
- *         __   __
- *         \/---\/
- *          ). .(
- *         ( (") )
- *          )   (
- *         /     \
- *        (       )``
- *       ( \ /-\ / )
- *        w'W   W'w
- *
  * author   seven
  * email    straymax@163.com
  * date     2018/5/10 下午4:37
@@ -643,15 +633,17 @@ public class HBaseOps {
 //                System.out.println(new String(b));
 //            }
 //
+//            deleteTable("ORDERTEST");
 //            String[] strings = {"INFO","ID","TIME","MACHINEID","ORDERTYPE","PLAYTYPE","MONEY","ACCOUNT","NETID","POINTID","CITY","SHOPID","SHOPNAME","SHOPPRICE","SHOPNUMBER"};
-//            String tableName = "ORDERTEST";
-//            createTable(tableName,strings);
-
-
-
-            String[] strings = {"INFO","ID","NAME","PARENTID","CREATEPERSON","CREATETIME","UPDATEPERSION","UPDATETIME","ISDELETE","NETTYPE","OTHER"};
-            String tableName = "NETTYPE";
+            String[] strings = {"INFO","ID","TIME","MACHINEID","ORDERTYPE","PLAYTYPE","MONEY","ACCOUNT","NETID","POINTID","OPERATEID","OFFICEID"};
+            String tableName = "ORDERTEST";
             createTable(tableName,strings);
+
+
+//            deleteTable("NETTYPE");
+//            String[] strings = {"INFO","ID","NAME","PARENTID","CREATEPERSON","CREATETIME","UPDATEPERSION","UPDATETIME","ISDELETE","NETTYPE","OTHER"};
+//            String tableName = "NETTYPE";
+//            createTable(tableName,strings);
         } catch (Exception e) {
             e.printStackTrace();
         }

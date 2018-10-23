@@ -1,5 +1,7 @@
 package com.seven.spark
 
+import java.util.regex.Pattern
+
 import com.seven.spark.hbase.rowkey.RowKeyGenerator
 import com.seven.spark.hbase.rowkey.generator.{FileRowKeyGenerator, HashRowKeyGenerator}
 
@@ -9,16 +11,6 @@ import scala.collection.mutable
 /**
   *
   * Created by IntelliJ IDEA.
-  *         __   __
-  *         \/---\/
-  *          ). .(
-  *         ( (") )
-  *          )   (
-  *         /     \
-  *        (       )``
-  *       ( \ /-\ / )
-  *        w'W   W'w
-  *
   * author   seven
   * email    straymax@163.com
   * date     2018/5/16 上午10:37
@@ -65,6 +57,15 @@ object HelloScala {
     println(new String(fileRowKeyGen.generate("seven")))
     println(new String(fileRowKeyGen.generate("seven")))
 
+    println(getFlag("YST180000041807091633406164"))
+    println(("YST180000041807091633406164").length == 27)
 
+  }
+
+  def getFlag(id:String):Boolean={
+    val regex = ".*[a-zA-Z]+.*"
+    val str = id.substring(11, 27)
+    val matcher = Pattern.compile(regex).matcher(str)
+    !matcher.matches() //过滤订单后几位包含字母的数据
   }
 }

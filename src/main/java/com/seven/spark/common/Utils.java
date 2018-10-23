@@ -4,20 +4,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.*;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.text.DecimalFormat;
 
 /**
  * Created by IntelliJ IDEA.
- *         __   __
- *         \/---\/
- *          ). .(
- *         ( (") )
- *          )   (
- *         /     \
- *        (       )``
- *       ( \ /-\ / )
- *        w'W   W'w
- *
  * author   seven
  * email    straymax@163.com
  * date     2018/5/16 上午10:37

@@ -18,7 +18,7 @@ import java.sql.DriverManager;
 public class PooledPhoenixFactory extends BasePooledObjectFactory<Connection> {
     public static final Logger LOG = LoggerFactory.getLogger(PooledPhoenixFactory.class);
 
-    private static String jdbcUrl = "jdbc:phoenix:vm-xaj-bigdata-da-d01,vm-xaj-bigdata-da-d02,vm-xaj-bigdata-da-d03";
+    private static String jdbcUrl = "jdbc:phoenix:hadoop03,hadoop04,hadoop02,hadoop01";
 
     @Override
     public Connection create() throws Exception {

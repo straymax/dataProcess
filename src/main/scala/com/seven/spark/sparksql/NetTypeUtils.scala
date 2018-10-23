@@ -7,16 +7,6 @@ import org.apache.spark.{SparkConf, SparkContext}
 
 /**
   * Created by IntelliJ IDEA.
-  *         __   __
-  *         \/---\/
-  *          ). .(
-  *         ( (") )
-  *          )   (
-  *         /     \
-  *        (       )``
-  *       ( \ /-\ / )
-  *        w'W   W'w
-  *
   * author   seven
   * email    straymax@163.com
   * date     2018/5/2 上午11:37

@@ -7,16 +7,6 @@ import org.apache.kafka.clients.producer.{KafkaProducer, ProducerRecord}
 
 /**
   * Created by IntelliJ IDEA.
-  *         __   __
-  *         \/---\/
-  *          ). .(
-  *         ( (") )
-  *          )   (
-  *         /     \
-  *        (       )``
-  *       ( \ /-\ / )
-  *        w'W   W'w
-  *
   * author   seven
   * email    straymax@163.com
   * date     2018/4/16 上午10:37

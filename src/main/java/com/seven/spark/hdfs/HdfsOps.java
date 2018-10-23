@@ -12,7 +12,7 @@ import org.apache.spark.api.java.JavaSparkContext;
 
 public class HdfsOps {
 
-    private final static String hadoopPath = "hdfs://vm-xaj-bigdata-da-d01:8020";
+    private final static String hadoopPath = "hdfs://vm-xy-bigdata-p01:8020";
 
     public static void saveHdfs(JavaRDD<String> rdd, JavaSparkContext sc, String savePath) {
         saveData(rdd, sc, savePath, 1);
