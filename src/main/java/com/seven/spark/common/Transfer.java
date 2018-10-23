@@ -212,10 +212,10 @@ public class Transfer {
     }
 
     public static void main(String[] args) throws Exception {
-        Transfer transfer = new Transfer("10.213.4.25", "root", "yst123456", 22);
-        transfer.uploadFile("/Users/seven/shell/max/", "upload.sh", "/home/seven/shell/");
+        Transfer transfer = new Transfer("127.0.0.1", "root", "123456", 22);
+        transfer.uploadFile("/Users/seven/shell/max/", "upload.sh", "/Users/seven/shell/");
         //若无需执行command命令，则关闭连接
         //transfer.close();
-        System.out.println(transfer.runCommand("sh /home/karen/record.sh"));
+        System.out.println(transfer.runCommand("sh /Users/seven/record.sh"));
     }
 }
